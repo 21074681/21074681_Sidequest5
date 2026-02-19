@@ -27,11 +27,11 @@ let player;
 let cam;
 
 function preload() {
-  function preload() {
-    allLevelsData = loadJSON("./levels.json");
-  }
-  // levels.json beside index.html [web:122]
+  console.log("Loading JSON...");
+  allLevelsData = loadJSON("levels.json");
 }
+
+// levels.json beside index.html [web:122]
 
 function setup() {
   createCanvas(VIEW_W, VIEW_H);
