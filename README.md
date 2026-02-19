@@ -1,12 +1,14 @@
 ## Project Title
 
+Camera systems week 5 side quest
+
 ## GBDA302 Week 4 Example 5: Camera systems
 
 ## Authors
 
 Karen Cochrane and David Han
 
-Emily Sharpe- 21074681
+Emily Sharpe - 21074681
 
 ---
 
@@ -20,11 +22,7 @@ fully Modular systems with wrold space that goes past your screen, lerp controls
 
 Learning Goals:
 
-- - load JSON in preload()
-- create WorldLevel from JSON
-- create BlobPlayer
-- update + draw each frame
-- handle input events (jump, optional next level)
+- make the camera move into the rest of the game that is off screen, relaod when fails and jumps to platoforms. Learning and calm environement.
 
 ---
 

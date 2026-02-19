@@ -27,7 +27,10 @@ let player;
 let cam;
 
 function preload() {
-  allLevelsData = loadJSON("levels.json"); // levels.json beside index.html [web:122]
+  function preload() {
+    allLevelsData = loadJSON("./levels.json");
+  }
+  // levels.json beside index.html [web:122]
 }
 
 function setup() {
