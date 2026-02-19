@@ -16,6 +16,8 @@ Learning goals:
 - Explore scalable project architecture for larger games
 */
 
+console.log("SKETCH FILE LOADED");
+
 const VIEW_W = 800;
 const VIEW_H = 480;
 
@@ -27,8 +29,9 @@ let player;
 let cam;
 
 function preload() {
-  console.log("Loading JSON...");
+  console.log("PRELOAD running");
   allLevelsData = loadJSON("levels.json");
+  console.log("Loaded data:", allLevelsData);
 }
 
 // levels.json beside index.html [web:122]
@@ -39,7 +42,12 @@ function setup() {
   textSize(14);
 
   cam = new Camera2D(width, height);
-  loadLevel(levelIndex);
+
+  if (allLevelsData && allLevelsData.levels) {
+    loadLevel(levelIndex);
+  } else {
+    console.error("Levels not loaded:", allLevelsData);
+  }
 }
 
 function loadLevel(i) {
